@@ -1,0 +1,208 @@
+body { 
+    margin: 0; 
+    background-color: #FCFBFB; 
+
+   
+      
+} 
+img { 
+    max-width: 100%; 
+    height: auto; /* serve a eliminare il margin-bottom che le immagini hanno di default */ 
+}
+
+main{ 
+
+    max-width: 1200px; 
+    padding: 20px; 
+
+} 
+header a { 
+
+    text-decoration: none; 
+
+    color:white; 
+
+} 
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    background:#27330B;
+    position:fixed;
+
+} 
+header nav ul { /* gestisce esattamente le voci della testata */
+
+    margin:0; 
+    padding: 0; 
+    list-style-type: none; 
+    display: flex; 
+    gap: 530px; /* distanza tra una voce e l'altra */
+    font-family: 'Krona One', sans-serif;
+font-size: large;
+} 
+.hero{
+    text-align: center;
+    color:#AFCA#27330BBB;
+    font-size:50px;
+    margin:10px auto;
+    font-family: 'Krona one', regular;
+}
+.card1{
+margin:0px;
+}
+.pellegrassa{
+    text-align: right;
+    margin:0;
+   
+}
+.hero1{ /* scritta testo homepage PELLE GRASSA */
+    margin-left:70%;
+    margin-top:160px;
+    font-size:20px;
+    width:50%;
+   
+    font-family: 'Krona One', sans-serif;
+
+}
+.hero2{
+    max-width: 60%;
+}
+.hero11{ /* scritta testo homepage testo della pelle grassa*/
+    margin-left:70%;
+    font-size:20px;
+    text-align:Center;
+    width:50%;
+    font-family: 'Libre Caslon Text', serif;
+}
+.sostituito{ /* scritta testo homepage PELLE SECCA */
+  text-align: center;
+  font-size:20px;
+ 
+ 
+  font-family: 'Krona One', sans-serif;
+  
+}
+.skinhome{ /* PERCHÈ È IMPORTANTE LA SKINCARE? */
+    margin-top:15%;
+    text-align: center;
+    width:100%;
+    color:#AFCABB;
+   margin-left:10%;
+
+}
+.skinhome1{ /* paragrafi testo */
+text-align:left;
+font-family: 'Libre Caslon Text', serif;
+width:60%;
+display:inline-block;
+margin-left: 28%;
+}
+.secca{ /* scritta testo homepage testo della pelle secca */
+    text-align: center;
+    width:50%;
+    margin-left:8%;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+ 
+
+.grid{
+    margin-top: 23%;
+align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   gap:130px;
+margin-right:-25%;
+}
+.iconad{ /* quando clicco sulla icona x */
+    transition: .2s;
+}
+.iconat{
+    transition: .2s;
+}
+.iconaf{
+    transition: .2s;
+}
+.iconas{
+    transition: .2s;
+}
+  .iconat:hover{ /* aumenta la scala di 1.1 */
+    transform: scale(1.1);
+  }
+  .iconaf:hover{
+    transform: scale(1.1);
+  }
+  .iconas:hover{
+    transform: scale(1.1);
+  }
+  .iconad:hover{
+    transform: scale(1.1);
+  }
+
+.secca button { /* BOTTONE PELLE SECCA */
+    cursor:pointer;
+    padding: 10px 25px; /* larghezza e altezza bottone */
+    font-family: 'Krona One', sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    background-color: #FCFBFB; 
+    -moz-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    -webkit-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f5), to(#dfdfdf)); /* gradiante colore */
+background: -webkit-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -moz-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -ms-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -o-linear-gradient(top, #f2f4f5, #dfdfdf);
+}
+.secca button:hover{
+    background: #AFCABB;; /* quando il cursore sale sul bottone, questo si colora di blu */
+  
+        }
+    
+        .hero11 button{ /* BOTTONE PELLE GRASSA */
+            cursor:pointer;
+            padding: 10px 23px; /* larghezza e altezza bottone */
+            font-family: 'Krona One', sans-serif;
+            display: inline-block;
+            text-align: center;
+            font-size: 20px;
+            color:black;
+            background-color: #FCFBFB; 
+            -moz-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+            -webkit-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+            border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+        box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+        background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f5), to(#dfdfdf)); /* gradiante colore */
+        background: -webkit-linear-gradient(top, #f2f4f5, #dfdfdf);
+        background: -moz-linear-gradient(top, #f2f4f5, #dfdfdf);
+        background: -ms-linear-gradient(top, #f2f4f5, #dfdfdf);
+        background: -o-linear-gradient(top, #f2f4f5, #dfdfdf);
+        }
+        .hero11 button:hover{
+            background: #AFCABB;; /* quando il cursore sale sul bottone, questo si colora di blu */
+          
+        }
+
+
+    footer{
+        background-color:#27330B;
+        height:200px;  
+    }
+    footer p{
+        color:white;
+        color:white;
+        text-align: left;
+        padding:20px;
+        font-size:50px;
+        font-family: 'Combo', cursive;
+    }

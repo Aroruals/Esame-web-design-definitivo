@@ -1,0 +1,2628 @@
+body { 
+    margin: 0; 
+    background-color: #FCFBFB;  
+} 
+img { 
+    max-width: 100%; 
+    height: auto; /* serve a eliminare il margin-bottom che le immagini hanno di default */ 
+}
+main{ 
+    max-width: 1200px; 
+    padding: 20px; 
+
+} 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #27330B;
+    display: flex; 
+    justify-content:center;
+    margin: auto;
+    align-items: center; 
+    padding:10px; 
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top:0;
+  }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  
+  .dropdown .dropbtn {
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'Krona one', regular;
+    margin: 0;
+  }
+  
+  header a{
+    font-size:20px;
+  }
+
+  .derma a{
+    font-family: 'Combo', cursive;
+    color:white;
+    font-size:50px;
+    position: fixed;
+    top: 8px;
+    z-index: 4;
+    text-align: center;
+    left: 5%;
+    text-decoration: none;
+}
+  
+  .derma a:hover {
+    animation: pulse 0.5s infinite alternate;   
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color:#afcaaf;
+    }
+    100% {
+        transform: scale(1.1);
+        color:white;
+    }
+}
+
+
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 155px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top:50;
+  }
+  
+  .dropdown-content a { /* CSS SCRITTE MENU A TENDINA */
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: 'Libre Caslon Text', serif;
+  }
+  
+  .dropdown-content a:hover {
+    background-color:#AFCABB;
+    color:white;
+
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.heroimage{
+    animation-name: slideinTop;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    margin-top:0px;
+   
+
+}
+
+
+.hero{
+    text-align: center;
+    color: #afcaaf;
+    font-size:50px;
+    margin:10px auto;
+    font-family: 'Krona one', regular;
+    
+}
+.herograssa{
+    text-align: center;
+    color: #afcaaf;
+    font-size:50px;
+    margin-top: 100px;
+    font-family: 'Krona one', regular;
+    animation: fadeIn 1s ease-in-out;
+}
+.heroimage1{
+    text-align: center;
+    margin: auto;
+   
+}
+
+.primo{
+    font-family: 'Krona One', sans-serif;
+    font-size: 26px;
+    margin: 10px;
+}
+.skinhome2{
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 20px;
+    width: 60%;
+    text-align: left;
+    display: inline-block;
+    margin-left: 15%;
+}
+.card1{
+margin:0px;
+}
+.pellegrassa{
+    text-align: right;
+    margin:0;
+   
+}
+.hero1{ /* scritta testo homepage PELLE GRASSA */
+    margin-left:70%;
+    margin-top:160px;
+    font-size:20px;
+    width:50%;
+   
+    font-family: 'Krona One', sans-serif;
+
+}
+.hero2{
+    max-width: 60%;
+}
+.hero11{ /* scritta testo homepage testo della pelle grassa*/
+    margin-left:70%;
+    font-size:20px;
+    text-align:Center;
+    width:50%;
+    font-family: 'Libre Caslon Text', serif;
+}
+.seccapo{ /* scritta testo homepage PELLE SECCA */
+  text-align: center;
+  font-size:20px;
+  font-family: 'Krona One', sans-serif;
+  
+}
+.skinhome{ /* PERCHÈ È IMPORTANTE LA SKINCARE? */
+    margin-top:15%;
+    text-align: center;
+    width:100%;
+    color:#AFCABB;
+   margin-left:10%;
+
+}
+.skinhome1{ /* paragrafi testo */
+text-align:left;
+font-family: 'Libre Caslon Text', serif;
+width:60%;
+display:inline-block;
+margin-left: 28%;
+}
+.secca{ /* scritta testo homepage testo della pelle secca */
+    text-align: center;
+    width:50%;
+    margin-left:8%;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+ 
+
+.grid{
+    margin-top: 23%;
+align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   gap:130px;
+margin-right:-25%;
+cursor: pointer;
+
+}
+.iconad{ /* quando clicco sulla icona x */
+    transition: .2s;
+    z-index: 1;
+}
+.iconat{
+    transition: .2s;
+    z-index: 1;
+}
+.iconaf{
+    transition: .2s;
+    z-index: 1;
+}
+.iconas{
+    transition: .2s;
+    z-index: 1;
+}
+  .iconat:hover{ /* aumenta la scala di 1.1 */
+    transform: scale(1.1);
+  }
+  .iconaf:hover{
+    transform: scale(1.1);
+  }
+  .iconas:hover{
+    transform: scale(1.1);
+  }
+  .iconad:hover{
+    transform: scale(1.1);
+  }
+
+.secca button { /* BOTTONE PELLE SECCA */
+    cursor:pointer;
+    padding: 10px 25px; /* larghezza e altezza bottone */
+    font-family: 'Krona One', sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    background-color: #FCFBFB; 
+    -moz-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    -webkit-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f5), to(#dfdfdf)); /* gradiante colore */
+background: -webkit-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -moz-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -ms-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -o-linear-gradient(top, #f2f4f5, #dfdfdf);
+transition-duration: 0.4s;
+}
+.secca button:hover{
+    background:#27330B; /* quando il cursore sale sul bottone, questo si colora di verde */
+    color: white;
+        }
+        .hero11 button{ /* BOTTONE PELLE GRASSA */
+            cursor:pointer;
+            padding: 10px 23px; /* larghezza e altezza bottone */
+            font-family: 'Krona One', sans-serif;
+            display: inline-block;
+            text-align: center;
+            font-size: 20px;
+            color:black;
+            background-color: #FCFBFB; 
+            -moz-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+            -webkit-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+            border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+        box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+        background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f5), to(#dfdfdf)); /* gradiante colore */
+        background: -webkit-linear-gradient(top, #f2f4f5, #dfdfdf);
+        background: -moz-linear-gradient(top, #f2f4f5, #dfdfdf);
+        background: -ms-linear-gradient(top, #f2f4f5, #dfdfdf);
+        background: -o-linear-gradient(top, #f2f4f5, #dfdfdf);
+        transition-duration: 0.4s;
+        }
+        .hero11 button:hover{
+            background:#27330B; /* quando il cursore sale sul bottone, questo si colora di blu */
+            color: white;
+           transition-duration: 0.4s;
+        }
+     
+        .secca button { /* BOTTONE PELLE SECCA */
+            cursor:pointer;
+            padding: 10px 25px; /* larghezza e altezza bottone */
+            font-family: 'Krona One', sans-serif;
+            display: inline-block;
+            text-align: center;
+            font-size: 20px;
+            color:black;
+            background-color: #FCFBFB; 
+            -moz-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+            -webkit-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+            border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+        box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+        background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f5), to(#dfdfdf)); /* gradiante colore */
+        background: -webkit-linear-gradient(top, #f2f4f5, #dfdfdf);
+        background: -moz-linear-gradient(top, #f2f4f5, #dfdfdf);
+        background: -ms-linear-gradient(top, #f2f4f5, #dfdfdf);
+        background: -o-linear-gradient(top, #f2f4f5, #dfdfdf);
+        transition-duration: 0.4s;
+        }
+        .secca button:hover{
+            background: #AFCABB;; /* quando il cursore sale sul bottone, questo si colora di blu */
+            background: #27330B;; /* quando il cursore sale sul bottone, questo si colora di blu */
+            color:white;
+          
+                }
+            
+                .hero11 button{ /* BOTTONE PELLE GRASSA */
+                    cursor:pointer;
+                    padding: 10px 23px; /* larghezza e altezza bottone */
+                    font-family: 'Krona One', sans-serif;
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 20px;
+                    color:black;
+                    background-color: #FCFBFB; 
+                    -moz-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+                    -webkit-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+                    border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+                    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+                box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+                background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f5), to(#dfdfdf)); /* gradiante colore */
+                background: -webkit-linear-gradient(top, #f2f4f5, #dfdfdf);
+                background: -moz-linear-gradient(top, #f2f4f5, #dfdfdf);
+                background: -ms-linear-gradient(top, #f2f4f5, #dfdfdf);
+                background: -o-linear-gradient(top, #f2f4f5, #dfdfdf);
+                transition-duration: 0.4s;
+                }
+                .hero11 button:hover{
+                    background: #27330B;; /* quando il cursore sale sul bottone, questo si colora di blu */
+                  color:white;
+                }
+        
+        
+                footer{
+                    margin-top:200px; /* distanza dalle foto */
+                    background:#27330B;;
+                    height:360px;
+                }
+                footer p{ /* GESTISCE IL NOME NEL FOOTER ARORUALS  */
+                   color:white;
+                    text-align: left;
+                    padding:20px;
+                    font-size:50px;
+                    font-family: 'Combo', cursive;
+                    
+                }
+                .cookie{ /* GESTISCE IL TESTO SOTTO DI ARORUALS */
+                    color:white;
+                    text-align: left;
+                   padding:10px;
+                    font-size:12px;
+                    font-family:'Times New Roman', Times, serif;
+                    margin-top:-90px;
+                }
+                .privacy{ /* GESTISCE IL TESTO SOTTO SITE BY ARORUALS */
+                    color:white;
+                    padding:10px;
+                    font-size:14px;
+                    font-family:'Times New Roman', Times, serif;
+                margin-top:-40px;
+                }
+        
+            
+        
+            .titolo{
+                font-size:40px;
+                color: black;
+                position:fixed;
+                text-align: center;
+                color:#AFCABB;
+                font-size:50px;
+                margin:10px auto;
+                font-family: 'Krona one', regular;
+        
+  
+        }
+            .informazioni{
+                color:white;
+                font-size:15px;
+                list-style: none;
+                text-align: center;
+                font-family: 'Krona one', regular;
+                line-height: 2.0;
+                margin-top:-12%;
+                
+            }
+            .informazioni1{
+                color:white;
+                font-size:15px;
+                list-style: none;
+                text-align: center;
+                font-family: 'Krona one', regular;
+                line-height: 2.0;
+                margin-top:-12%;
+                text-decoration: none;
+                text-transform: none;
+              }
+            a {
+                text-decoration: none;
+                color: inherit;
+           }
+            .informazioni2{
+                color:white;
+                font-size:15px;
+                list-style: none;
+                text-align: center;
+                font-family: 'Krona one', regular;
+                line-height: 2.0;
+                margin-top:-12%;
+            }
+            .information{
+                display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+         margin:0 200px;
+         margin-left:35%;
+            }
+            @keyframes slideinTop{
+                from{
+    transform:translateX(-300px);
+                }
+                to{
+    transform:translateX(0);
+                }
+            }
+
+/* CSS PELLE GRASSA PAGINA */
+        .paragrafodue{
+            display: flex;
+            margin-top: 100px;  
+        }
+
+        .paragrafouno{
+            display: flex;
+            margin-top: 90px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .paragrafodue img{
+            width:30%;
+            height:30%;
+            margin-left:20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+    
+    
+        .paragrafouno img{
+           
+            width:30%;
+            height:30%;
+            margin-left:20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+    
+
+        .testouno{
+            font-family: 'Libre Caslon Text', serif;
+            font-size: 18px;
+            width: 35%;
+            text-align: left;
+            display: inline-block;
+            margin-left: 18%;
+            animation: fadeIn 1s ease-in-out;
+            
+        }
+        .testodue{
+            font-family: 'Libre Caslon Text', serif;
+            font-size: 17px;
+            width: 35%;
+            text-align: left;
+            display: inline-block;
+            margin-left: 18%;
+           
+        }
+        .paragrafodue img{
+           
+            right: 80px;
+        }
+        footer{
+            background-color:#27330B;
+            height:200px;  
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            display:inline-flex;
+            padding:20px 80px;
+            font-family: 'Krona One', sans-serif;
+            font-size:15px;
+            margin-top:100px;
+            margin-left: 2%;
+            z-index: 2;
+          }
+          .flip-card-back p{
+            font-family: 'Libre Caslon Text', serif;
+            font-size:22px;
+            text-align: left;
+            margin-left:5px;
+    
+          }
+          
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+          
+          .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          
+          .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+          
+          .flip-card-front {
+            background-color: #27330B;
+            color: rgb(255, 255, 255);
+          }
+          
+          .flip-card-back {
+            background-color:#27330B;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          .flip-card h1{
+            margin-top: 125px;
+           
+          }
+.herograssa1{
+    text-align: center;
+    color: #afcaaf;
+    font-size:25px;
+    margin-top: 100px;
+    font-family: 'Krona one', regular;
+}
+.cose{
+    font-family: 'Krona one', regular;
+    text-align: center;
+    margin-bottom: -40px;
+    animation: fadeIn 2s ease-in-out;
+}
+.cause{
+    font-family: 'Krona one', regular;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: -70px;
+}
+.herograssa2{
+
+        text-align: center;
+        color: #afcaaf;
+        font-size:20px;
+        margin-top: -5px;
+        font-family: 'Krona one', regular;
+    }
+
+
+.buttondetersionegrassa button{ /* BOTTONE PELLE GRASSA */
+    cursor:pointer;
+    padding: 10px 23px; /* larghezza e altezza bottone */
+    font-family: 'Krona One', sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    background-color: #FCFBFB; 
+    -moz-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    -webkit-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    border-radius: 60px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f5), to(#dfdfdf)); /* gradiante colore */
+background: -webkit-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -moz-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -ms-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -o-linear-gradient(top, #f2f4f5, #dfdfdf);
+transition-duration: 0.4s;
+}
+.buttondetersionegrassa button:hover{
+    background: #27330B;; /* quando il cursore sale sul bottone, questo si colora di blu */
+  color:white;
+}
+.buttontonicograssa button{ /* BOTTONE PELLE GRASSA */
+    cursor:pointer;
+    padding: 10px 23px; /* larghezza e altezza bottone */
+    font-family: 'Krona One', sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    background-color: #FCFBFB; 
+    -moz-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    -webkit-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    border-radius: 60px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f5), to(#dfdfdf)); /* gradiante colore */
+background: -webkit-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -moz-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -ms-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -o-linear-gradient(top, #f2f4f5, #dfdfdf);
+transition-duration: 0.4s;
+}
+.buttontonicograssa button:hover{
+    background: #27330B;; /* quando il cursore sale sul bottone, questo si colora di blu */
+  color:white;
+}
+
+.buttonsierograssa button{ /* BOTTONE PELLE GRASSA */
+    cursor:pointer;
+    padding: 10px 23px; /* larghezza e altezza bottone */
+    font-family: 'Krona One', sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    background-color: #FCFBFB; 
+    -moz-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    -webkit-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    border-radius: 60px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f5), to(#dfdfdf)); /* gradiante colore */
+background: -webkit-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -moz-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -ms-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -o-linear-gradient(top, #f2f4f5, #dfdfdf);
+transition-duration: 0.4s;
+}
+.buttonsierograssa button:hover{
+    background: #27330B;; /* quando il cursore sale sul bottone, questo si colora di blu */
+  color:white;
+}
+
+.buttoncremagrassa button{ /* BOTTONE PELLE GRASSA */
+    cursor:pointer;
+    padding: 10px 23px; /* larghezza e altezza bottone */
+    font-family: 'Krona One', sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    background-color: #FCFBFB; 
+    -moz-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    -webkit-border-radius: 60px; /* modo per arrotondare i bordi del bottone */
+    border-radius: 60px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* modo per dare al bottone un ombre */
+background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f5), to(#dfdfdf)); /* gradiante colore */
+background: -webkit-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -moz-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -ms-linear-gradient(top, #f2f4f5, #dfdfdf);
+background: -o-linear-gradient(top, #f2f4f5, #dfdfdf);
+transition-duration: 0.4s;
+}
+.buttoncremagrassa button:hover{
+    background: #27330B;; /* quando il cursore sale sul bottone, questo si colora di blu */
+  color:white;
+}
+
+.step{
+    display:flex;
+    padding:50px 500px;
+  gap:50px;
+  margin-left:-12%;
+    justify-content: space-between;
+
+}
+
+/* CSS PELLE INFODETERSIONE */
+.numerouno{
+    text-align: left;
+    width:35%;
+   margin:0px 0px 50px 500px;
+   font-family: 'Libre Caslon Text', serif;
+   font-size: 16px;
+}
+.textuno p{
+   
+    
+    font-family: 'Libre Caslon Text', serif;
+    font-size:16px;
+    width:35%;
+    margin-left:33%;
+}
+.textuno img{
+    width:250px;
+    height:250px;
+   margin-left:42%;
+   transition: .2s;
+}
+.textuno h1{
+    text-align:center;
+    font-size:20px;
+    font-family: 'Krona One', sans-serif;
+    margin-top:5%;
+}
+
+.textuno img:hover{ /* aumenta la scala di 1.1 */
+    transform: scale(1.1);
+  }
+
+
+/* CSS DETERSIONEGRASSA.HTML */
+
+.herograssa9{
+text-align: center;
+color: black;
+font-size:45px;
+margin-top: 100px;
+font-family: 'Krona one', regular;
+}
+.herograssa9 h5{
+text-align: center;
+color: black;
+font-size:28px;
+margin-top: -40px;
+font-family: 'Krona one', regular;
+
+}
+.herograssa10{
+    text-align: center;
+    color: black;
+    font-size:30px;
+    margin-top: 100px;
+    font-family: 'Krona one', regular;
+}
+
+.provina1 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+    width:10%;
+    height:10%;
+    margin-left:25%;
+    margin-top:25px;  
+}
+.provina1{
+    gap:10px;
+}
+.testoprovina1 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+    text-align: left;
+    margin-right:28%;
+    width:30%;
+    float:right;
+    margin-top:-250px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size:14px;
+}
+.titolodetersionegrassauno{ 
+    text-align: center;
+    margin-right:28%;
+    width:30%;
+    float:right;
+    margin-top:30px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size:8px;
+
+  
+}
+
+.provina2 img{ /* SECONDO PRODOTTO CARATTERISTICHE IMMAGINE */
+    width:10%;
+    height:10%;
+    margin-left:25%;
+    margin-top:100px;
+}
+.testoprovina2 p{ /* SECONDO PRODOTTO CARATTERISTICHE PARAGRAFO */
+    text-align: left;
+    margin-right:28%;
+    width:30%;
+    float:right;
+    margin-top:-270px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size:14px;
+}
+.titolodetersionegrassadue{
+    text-align: center;
+    margin-right:28%;
+    width:30%;
+    float:right;
+    margin-top:140px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size:8px;
+}
+    
+.provina3 img{  /* TERZO PRODOTTO CARATTERISTICHE IMMAGINE */
+    width:7%;
+    height:7%;
+    margin-left:26%;
+    margin-top:100px;
+}
+.testoprovina3 p{ /* TERZO PRODOTTO CARATTERISTICHE PARAGRAFO */
+    text-align: left;
+    margin-right:28%;
+    width:30%;
+    float:right;
+    margin-top:-250px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size:14px;
+}
+.titolodetersionegrassatre{
+    text-align: center;
+    margin-right:28%;
+    width:30%;
+    float:right;
+    margin-top:120px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size:8px;
+}
+
+      /* CSS TONICO PELLE GRASSA */
+
+      .pennablu{ 
+        width:10%;
+        height:10%;
+        margin-left:380px;
+        margin-top:100px;
+      }
+      .sottotitolotonicograssa{
+        text-align: center;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:70px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:8px;
+      }
+      .sottotitoloduetonico{
+        text-align: center;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:75px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:8px;
+      }
+      .provinarosso{
+        width:7%;
+        height:7%;
+        margin-left:420px;
+        margin-top:100px;
+
+      }
+      .testoprovina1x p{
+        text-align: left;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-250px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:14px;
+      }
+   
+      .testoprovina1y p{
+        text-align: left;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-250px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:14px;
+      }
+      .testoprovina1y h1{
+        font-size:15px;
+        margin-left:24%;
+        color:rgb(0, 0, 0);
+        font-family: 'Libre Caslon Text', serif; 
+      }
+      .testoprovina2x p{ /* SECONDO PRODOTTO CARATTERISTICHE PARAGRAFO */
+        text-align: left;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-270px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:14px;
+    
+    }
+    .testoprovina3x p{ /* TERZO PRODOTTO CARATTERISTICHE PARAGRAFO */
+        text-align: left;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-250px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:14px;
+    }
+      .provina31{
+        width:7%;
+        height:7%;
+        margin-left:28%;
+        margin-top:100px;
+      }
+      .sottotitolotretonico{
+        text-align: center;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:50px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:8px;
+        
+      }
+    
+      .testoprovina15 p{
+        text-align: left;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-250px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:14px;
+      }
+    .testoprovina25 p{
+        text-align: left;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-270px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:14px;
+
+    }
+ 
+    .testoprovina35 p{
+        text-align: left;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-250px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:14px;
+    }
+    .arrow left{ /* FRECCIA */
+        font-size: 100px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        margin-left:5%;
+        margin: 15px 100px 0px 100px;
+        margin-bottom:-130px; /* distanza footer e freccia */
+    }
+    
+    .arrow:hover {
+        transform: translateX(-10px); /* Sposta la freccia all'indietro al passaggio del mouse */
+    }
+
+    
+      /* CSS ABOUT US */
+      .nostro{
+        margin-top: 100px;
+        font-family: 'Krona One', sans-serif;
+        text-align: center;
+          }
+        .chisiamo{
+            display: grid;
+            font-family: 'Libre Caslon Text', serif;
+            gap: 8px;
+            
+        }
+        .chisiamo p{
+        margin-left: 90px;
+        width: 40%;
+        justify-content: space-between; 
+       
+        }
+        .chisiamo img{
+            max-width: 50%;
+            margin-left: 48%;
+            margin-top: -26%;
+        }
+        .team{
+        margin-left: 10%;
+        margin-top: 60px;
+        }
+        .nome1{
+            text-align: center;
+            font-family: 'Krona One', sans-serif;
+            margin-left: 30%;
+            font-size: 12px;
+            margin-bottom: 60px;
+            margin-top: -30px;
+        }
+        .nome{
+            text-align: center;
+            font-family: 'Krona One', sans-serif;
+            margin-left: 30%;
+            font-size: 12px;
+            margin-bottom: 60px;
+            margin-top: 15px;
+        }
+        .tipo1{
+        display: grid;
+        gap: 8px;
+        }
+        .tipo1 p{
+            max-width: 35%; 
+            margin-left: 5%;
+            font-family: 'Libre Caslon Text', serif; 
+            font-size: 16px;
+        }
+        .tipo1 img{
+
+            margin-left: 42%;
+            margin-top: -33%;
+        }
+        .tipo2{
+            display: grid;
+            gap: 8px;
+            margin-top:120px;
+            }
+        .tipo2 p{
+           max-width: 35%; 
+           margin-left: 5%;
+           font-family: 'Libre Caslon Text', serif; 
+        }
+        .tipo2 img{
+            width: 634px;
+            height: 390px;
+            margin-left: 42%;
+            margin-top: -30%;
+        }
+    
+        /* CSS SIEROGRASSA */
+        .sottotitolosierograssa{
+            text-align: center;
+            margin-right:28%;
+            width:30%;
+            float:right;
+            margin-top:20px;
+            font-family: 'Libre Caslon Text', serif;
+            font-size:8px;
+        }
+        .pennarossa{
+            width:10%;
+            height:10%;
+            margin-left:25%;
+            margin-top:25px;  
+        }
+        .provina211{
+            width:7%;
+            height:7%;
+            margin-left:26%;
+            margin-top:100px;
+        }
+        .provina211 img{
+
+            margin-top:50px;
+        }
+        .provina311{
+            width:9%;
+            height:9%;
+            margin-left:25%;
+            margin-top:100px;
+        }
+        .testoprovina1 h1{
+            font-size:15px;
+            margin-left:25%;
+        }
+        .cannabis {
+            text-align: center;
+            margin-right:28%;
+            width:30%;
+            float:right;
+            margin-top:130px;
+            font-family: 'Libre Caslon Text', serif;
+            font-size:8px;
+        }
+        .lierac{
+            text-align: center;
+            margin-right:28%;
+            width:30%;
+            float:right;
+            margin-top:-300px;
+            font-family: 'Libre Caslon Text', serif;
+            font-size:8px;
+        }
+      
+        /* CSS CREMA GRASSA */
+        .imgcremagrassa1 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+            margin-left:22%;
+            max-width: 80%;
+            max-height: 80%;  
+            margin-top: 0px;
+        }
+        .imgcremagrassa1{
+            gap:5px;
+        }
+        .txtcremagrassa1 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+            text-align: left;
+            margin-right:26%;
+            width:30%;
+            float:right;
+            margin-top:-220px;
+            font-family: 'Libre Caslon Text', serif;
+            font-size:16px;
+        }
+        .titolocgrassa1{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+            text-align: center;
+            margin-right:28%;
+            width:30%;
+            float:right;
+            margin-top:-260px;
+            font-family: 'Libre Caslon Text', serif;
+            font-size:8px;
+            }
+            .imgcremagrassa2 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+                margin-left:18%; 
+                max-width: 70%;
+                max-height: 70%;  
+                margin-top: -20px;
+            }
+            .imgcremagrassa2{
+                gap:10px;
+            }
+            .txtcremagrassa2 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+                text-align: left;
+                margin-right:26%;
+                width:30%;
+                float:right;
+                margin-top:-190px;
+                font-family: 'Libre Caslon Text', serif;
+                font-size:16px;
+            }
+            .titolocgrassa2{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+                text-align: center;
+                margin-right:28%;
+                width:30%;
+                float:right;
+                margin-top:-240px;
+                font-family: 'Libre Caslon Text', serif;
+                font-size:8px;
+                }
+                .imgcremagrassa3 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+                    margin-left:20%;
+                    margin-top:5px; 
+                    max-width: 80%;
+                    max-height: 80%;  
+                    margin-top: -50px;
+                }
+                .imgcremagrassa3{
+                    gap:10px;
+                }
+                .txtcremagrassa3 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+                    text-align: left;
+                    margin-right:26%;
+                    width:30%;
+                    float:right;
+                    margin-top:-200px;
+                    font-family: 'Libre Caslon Text', serif;
+                    font-size:16px;
+                }
+                .titolocgrassa3{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+                    text-align: center;
+                    margin-right:28%;
+                    width:30%;
+                    float:right;
+                    margin-top:-260px;
+                    font-family: 'Libre Caslon Text', serif;
+                    font-size:8px;
+                    }
+/*CSS DETERSIONE SECCA*/
+.arrow-containerl {
+    position: relative;
+    left:3%;
+    
+}
+.arrow-containerlcane {
+    position: relative;
+    left:3%;
+    
+}
+.arrow-containerlcane2 {
+    position: relative;
+    left:3%;
+    
+}
+.arrow-containerlcane1 {
+    position: relative;
+    left:3%;
+    
+}
+.freccia{
+    display:flex;
+}
+
+.arrowl { /* FRECCIA CHE PROSEGUE VERSO LEFT */
+    font-size: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom:-150px;
+    margin-top:50px;
+   
+}
+
+.arrowl:hover {
+    transform: translateX(-10px); /* Sposta la freccia all'indietro al passaggio del mouse */
+}
+.arrow-container {
+    position: relative;
+    left:83%;
+}
+.arrow-containerape2{
+    position: relative;
+    left:83%;
+}
+.arrow-containerape1 {
+    position: relative;
+    left:83%;
+}
+.arrow-containerape {
+    position: relative;
+    left:83%;
+}
+
+.arrow {
+    font-size: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom:-150px;
+    margin-top:50px;
+   
+}
+
+.arrow:hover {
+    transform: translateX(10px); /* Sposta la freccia all'indietro al passaggio del mouse */
+}
+
+.imgdetersionesecca1 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+    margin-left:25%;
+    margin-top:5px; 
+    max-width: 80%;
+    max-height: 80%;  
+}
+.imgdetersionesecca1{
+    gap:10px;
+}
+.txtdetersionesecca1 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+    text-align: left;
+    margin-right:28%;
+    width:30%;
+    float:right;
+    margin-top:-250px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size:16px;
+}
+.titolo1{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+    text-align: center;
+    margin-right:28%;
+    width:30%;
+    float:right;
+    margin-top:50px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size:8px;
+    }
+
+    .imgdetersionesecca2 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+        margin-left:26%;
+        margin-top:5px; 
+        max-width: 80%;
+        max-height: 80%;  
+    }
+    .imgdetersionesecca2{
+        gap:10px;
+    }
+    .txtdetersionesecca2 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+        text-align: left;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-250px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:16px;
+    }
+    .titolo2{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+        text-align: center;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:70px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:8px;
+        }
+        
+    .imgdetersionesecca3 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+        margin-left:23%;
+        margin-top:5px; 
+        max-width: 60%;
+        max-height: 60%; 
+        margin-top: 40px; 
+    }
+    .imgdetersionesecca3{
+        gap:10px;
+    }
+    .txtdetersionesecca3 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+        text-align: left;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-250px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:16px;
+    }
+    .titolo3{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+        text-align: center;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:140px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:8px;
+        }
+
+
+       
+        
+        /*CSS TONICO SECCA*/
+    .imgtonicosecca1 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+            margin-left:25%;
+            margin-top:5px; 
+            max-width: 80%;
+            max-height: 80%;  
+        }
+    .imgtonicosecca1{
+            gap:10px;
+        }
+    .txttonicosecca1 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+            text-align: left;
+            margin-right:28%;
+            width:30%;
+            float:right;
+            margin-top:-250px;
+            font-family: 'Libre Caslon Text', serif;
+            font-size:16px;
+        }
+    .titolot1{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+        text-align: center;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-300px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:8px;
+            }
+            .imgtonicosecca2 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+                margin-left:26%;
+                margin-top:5px; 
+                max-width: 80%;
+                max-height: 80%; 
+                margin-top: 60px; 
+            }
+            .imgtonicosecca2{
+                gap:10px;
+            }
+            .txttonicosecca2 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+                text-align: left;
+                margin-right:28%;
+                width:30%;
+                float:right;
+                margin-top:-250px;
+                font-family: 'Libre Caslon Text', serif;
+                font-size:16px;
+            }
+            .titolot2{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+                text-align: center;
+                margin-right:28%;
+                width:30%;
+                float:right;
+                margin-top:-300px;
+                font-family: 'Libre Caslon Text', serif;
+                font-size:8px;
+               
+                }
+                .imgtonicosecca3 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+                    margin-left:24%;
+                    margin-top:5px; 
+                    max-width: 80%;
+                    max-height: 80%;  
+                    margin-top: 40px;
+                }
+                .imgtonicosecca3{
+                    gap:10px;
+                }
+                .txttonicosecca3 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+                    text-align: left;
+                    margin-right:28%;
+                    width:30%;
+                    float:right;
+                    margin-top:-250px;
+                    font-family: 'Libre Caslon Text', serif;
+                    font-size:16px;
+                }
+                .titolot3{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+                    text-align: center;
+                    margin-right:28%;
+                    width:30%;
+                    float:right;
+                    margin-top:-300px;
+                    font-family: 'Libre Caslon Text', serif;
+                    font-size:8px;
+                    }
+/*CSS SIEROSECCA*/
+.imgsierosecca1 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+    margin-left:24%;
+    max-width: 80%;
+    max-height: 80%;  
+    margin-top: 20px;
+}
+.imgsierosecca1{
+    gap:5px;
+}
+.txtsierosecca1 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+    text-align: left;
+    margin-right:28%;
+    width:30%;
+    float:right;
+    margin-top:-190px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size:16px;
+}
+.titolos1{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+    text-align: center;
+    margin-right:28%;
+    width:30%;
+    float:right;
+    margin-top:50px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size:8px;
+    }
+    .imgsierosecca2 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+        margin-left:25%;
+        margin-top:5px; 
+        max-width: 70%;
+        max-height: 70%;  
+        margin-top: 20px;
+    }
+    .imgsierosecca2{
+        gap:10px;
+    }
+    .txtsierosecca2 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+        text-align: left;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-250px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:16px;
+    }
+    .titolos2{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+        text-align: center;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:65px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:8px;
+        }
+        .imgsierosecca3 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+            margin-left:24%;
+            margin-top:5px; 
+            max-width: 80%;
+            max-height: 80%;  
+            margin-top: 40px;
+        }
+        .imgsierosecca3{
+            gap:10px;
+        }
+        .txtsierosecca3 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+            text-align: left;
+            margin-right:28%;
+            width:30%;
+            float:right;
+            margin-top:-250px;
+            font-family: 'Libre Caslon Text', serif;
+            font-size:16px;
+        }
+        .titolos3{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+            text-align: center;
+            margin-right:28%;
+            width:30%;
+            float:right;
+            margin-top:150px;
+            font-family: 'Libre Caslon Text', serif;
+            font-size:8px;
+            }      
+/*CSS CREMA SECCA*/
+.imgcremasecca1 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+    margin-left:24%;
+    margin-top:5px; 
+    max-width: 80%;
+    max-height: 80%;  
+    margin-top: 40px;
+}
+.imgcremasecca1{
+    gap:10px;
+}
+.txtcremasecca1 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+    text-align: left;
+    margin-right:28%;
+    width:30%;
+    float:right;
+    margin-top:-210px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size:16px;
+}
+.titoloc1{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+            text-align: center;
+            margin-right:39%;
+            width:max-content;
+            margin-top: 30px;
+            float:right;
+            font-family: 'Libre Caslon Text', serif;
+            font-size:8px;
+    }   
+    .imgcremasecca2 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+        margin-left:22%;
+        margin-top:-55px; 
+        max-width: 100%;
+        max-height: 100%;  
+        
+    }
+    .imgcremasecca2{
+        gap:10px;
+    }
+    .txtcremasecca2 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+        text-align: left;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        margin-top:-160px;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:16px;
+    }
+    .titoloc2{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+        text-align: center;
+        margin-right:28%;
+        width:30%;
+        float:right;
+        font-family: 'Libre Caslon Text', serif;
+        font-size:8px;
+        margin-top: 10px;
+        }
+        .imgcremasecca3 img{ /* PRIMO PRODOTTO CARATTERISTICHE IMMAGINE */
+            margin-left:18%;
+            margin-top:5px; 
+            max-width: 80%;
+            max-height: 80%;  
+            margin-top: -130px;
+        }
+        .imgcremasecca3{
+            gap:10px;
+        }
+        .txtcremasecca3 p{ /* PRIMO PRODOTTO CARATTERISTICHE PARAGRAFO */
+            text-align: left;
+            margin-right:28%;
+            width:30%;
+            float:right;
+            margin-top:-160px;
+            font-family: 'Libre Caslon Text', serif;
+            font-size:16px;
+        }
+        .titoloc3{ /* PRIMO PRODOTTO CARATTERISTICHE NOME PRODOTTO */
+            text-align: center;
+            margin-right:37%;
+            width:max-content;
+            float:right;
+            font-family: 'Libre Caslon Text', serif;
+            font-size:8px;
+           
+            }
+       
+
+
+
+
+
+
+
+
+
+            @media (max-width: 600px){
+                /*RESPONSIVE HOMEPAGE */
+
+                /* RESPONSIVE TESTATA */
+                .derma a{ /* responsive logo */
+                    font-size:35px;
+                    margin-left:-3%;
+                }
+                .dropdown .dropbtn { /* diminuito la grandezza del font delle scritte pelle grassa e pelle secca */
+                    font-size: 10px;  
+                }
+                .dropdown-content { /* diminiuto la larghezza della finestra a tendina del menù */
+                    min-width:122px;
+                }
+                    .navbar {
+                        padding: 5px; /* Riduci il padding nella navbar per dispositivi più piccoli */
+                        justify-content: right;
+                    }
+                    .navbar a {
+                        font-size: 12px; /* Riduci la dimensione del testo nei link della navbar */
+                    }
+                   /* RESPONSIVE HOME */
+                   .hero{ /* diminuito il font del testo "esplora il mondo della skincare */
+                    font-size:20px;
+                   }
+                   .img_deg{ /* gestisce il responsive della foto della pelle grassa */
+                    max-width: 65%;
+                    float:none;
+                    margin-left:17%;
+                   }
+.hero1{ /* TITOLO PELLE GRASSA SOTTO LA FOTO */
+    font-size:8px;
+    width:40%;
+    margin:10px 128px; /* Primo valore: distanza dall'immagine. Secondo valore: ho centrato il titolo */
+}
+.hero11{ /* TESTO SOTTO IL TITOLO PELLE GRASSA */
+    margin-left:25%;
+    font-size:15px;
+    text-align: left;
+    margin-bottom:-50px; /* diminuisce lo spazio tra le due section di pelle grassa e pelle secca */
+}
+.hero11 button{ /* BOTTONE PELLE GRASSA */
+    padding: 8px 13px; /* larghezza e altezza bottone */
+    font-size: 10px;
+margin-left:26%;
+}
+
+.hero2{ /* FOTO PELLE SECCA */
+    max-width: 65%;
+    float:none;
+    margin-left:17%;
+}
+
+.seccapo{ /* TESTO TITOLO PELLE SECCA */
+    font-size:8px;
+    width:40%;
+    margin:10px 128px; /* Primo valore: distanza dall'immagine. Secondo valore: ho centrato il titolo */
+}
+ .secca{ /* TESTO SOTTO IL TITOLO PELLE SECCA */
+                margin-left:-10%;
+                font-size:15px;
+                text-align: left;
+                width:140%;
+                
+}
+
+.secca button{ /* BOTTONE PELLE SECCA */
+ padding: 8px 13px; /* larghezza e altezza bottone */
+ font-size: 10px;
+margin-left:27%;
+}
+.grid{
+        display:block;
+        margin-bottom:20px;
+        margin-left:30%;
+    width:60%;
+    
+}
+.iconad, .iconat, .iconaf, .iconas{
+    margin-bottom:50px;
+}
+.skinhome{
+    font-size:10px;
+    
+    width:200%;
+display:block;
+margin-left:-40%;
+}
+.skinhome1{
+    width:200%;
+display:block;
+margin-left: -28%;
+font-size:13px;
+
+}
+
+
+
+
+
+
+footer {
+    margin-top: 20px; /* Riduci il margine superiore per dispositivi più piccoli */
+    height: auto; /* Altezza automatica in base al contenuto */
+}
+footer p { /* DERMA */
+    font-size: 30px; /* Riduci la dimensione del testo nel footer */
+}
+.cookie { /* 2023 site by Aroruals */
+    font-size: 10px; /* Riduci la dimensione del testo nel cookie */
+                   padding:30px;
+                   margin-left:-3%;
+                    
+                    margin-top:-90px;
+}
+.privacy { /* Privacy Cookies Consent Management Credits */
+    font-size: 10px; /* Riduci la dimensione del testo nella privacy */
+    margin-top: -53px; /* Riduci il margine superiore per dispositivi più piccoli */
+    
+}
+.titolo {
+    font-size: 30px; /* Riduci la dimensione del titolo */
+}
+.informazioni,
+.informazioni1,
+.informazioni2 {
+    font-size: 8px; /* Riduci la dimensione del testo nelle informazioni */
+    margin-top: -30%; /* Riduci il margine superiore per dispositivi più piccoli */
+}
+.information { /* section in cui dentro ci sono le informazioni di sopra */
+    flex-direction:column 2; /* Imposta l'orientamento delle informazioni su una colonna */
+    margin: 100px 15px 0px 0px; /* Centra il blocco di informazioni */
+    margin-left:8px;
+}
+/*RESPONSIVE PELLE GRASSA.HTML*/
+.herograssa{
+    font-size: 22px;
+}
+.cose h1{
+font-size: 18px;
+margin-bottom: -80px;
+}
+.paragrafouno{
+    display:grid;
+    margin-left: -10%;
+}
+.testouno p{
+    font-size: 12px;
+    width: 145%;
+    margin-left: 80px;
+  
+}
+.paragrafouno img{
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 30%;
+}
+.flip-card {
+    width: 100%; /* Usa tutta la larghezza disponibile */
+    max-width: 200px; /* Massima larghezza per elementi in linea */
+    max-height: 200px;
+    margin: 10px 50px; /* Centra gli elementi orizzontalmente con spaziatura */
+    padding: 20px; /* Riduci il padding */
+    margin-left:30%;
+}
+.flip-card img{
+    max-width:200px;
+    max-height: 200px;
+}
+
+.flip-card h1 {
+    margin-top: 10px; /* Riduci la distanza superiore */
+}
+
+.cause{
+    font-size: 12px;
+    margin-top: -0px;
+    margin-left: -10px;
+}
+.paragrafodue{
+    display:grid;
+    margin-left: -10%;
+}
+.testodue p{
+    font-size: 12px;
+    width: 145%;
+    margin-left: 80px;
+}
+.paragrafodue img{
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: 30%;
+}
+.herograssa1{
+    font-size: 13px;
+    width: 170%;
+    margin-left: -34%;
+    margin-top: 30px;
+}
+.herograssa2{
+    font-size: 13px;
+}
+.step{
+    display: grid;
+    margin-left: -30%;
+    padding: 30px 300px;
+}
+.buttontonicograssa{
+    margin-left: 25px;
+}
+.buttonsierograssa{
+    margin-left: 34px;
+}
+.buttoncremagrassa{
+    margin-left: 26px;
+}
+
+.buttondetersionegrassa button{
+    padding: 15px 20px; /* larghezza e altezza bottone */
+    font-size: 10px;
+margin-left:23%;
+}
+.buttontonicograssa button{
+    padding: 15px 20px; /* larghezza e altezza bottone */
+    font-size: 10px;
+margin-left:23%;  
+}
+.buttonsierograssa button{
+    padding: 15px 20px; /* larghezza e altezza bottone */
+    font-size: 10px;
+margin-left:23%; 
+}
+.buttoncremagrassa button{
+    padding: 15px 20px; /* larghezza e altezza bottone */
+    font-size: 10px;
+margin-left:23%; 
+}
+/* RESPONSIVE PELLE GENERALI: DET, TON, SIE, CRE */
+.numerouno{
+    font-size: 14px;
+    margin-left: 18%;
+    width: 70%;
+}
+.textuno img{
+margin-left: 31%;
+width: 200px;
+height: 200px;
+}
+.textuno p{
+margin-left:18% ;
+width: 70%;
+}
+.textuno h1{
+    font-size:15px;
+}
+
+/* RESPONSIVE DETERSIONEGRASSA.HTML */
+.herograssa9{
+    font-size:22px;
+}
+.herograssa9 h5{
+    font-size: 16px;
+    margin-top: -20px;
+}
+.numerouno{
+    font-size:13px;
+    
+}
+.herograssa10{
+    font-size:15px;
+}
+  
+    .provina1 img{
+      width: 20%; /* Riduci la larghezza delle immagini */
+      height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+      margin-left: 20px; /* Posiziona la foto a sinistra */
+      margin-right: auto; /* Centra la foto orizzontalmente */
+      display: block; /* Imposta il display su blocco per centrare verticalmente */
+    }
+    .provina2 img{
+        width: 20%; /* Riduci la larghezza delle immagini */
+        height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+        margin-left: 20px; /* Posiziona la foto a sinistra */
+        margin-right: auto; /* Centra la foto orizzontalmente */
+        display: block; /* Imposta il display su blocco per centrare verticalmente */
+        position:relative;
+        top:-50px;
+      }
+      .provina3 img{
+        width: 20%; /* Riduci la larghezza delle immagini */
+        height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+        margin-left: 20px; /* Posiziona la foto a sinistra */
+        margin-right: auto; /* Centra la foto orizzontalmente */
+        display: block; /* Imposta il display su blocco per centrare verticalmente */
+        
+}
+  .testoprovina1 p{
+    font-size:12px;
+    width:320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-190px;
+  }
+  .titolodetersionegrassauno{
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:6px;
+  }
+  .testoprovina2 p{
+    font-size:12px;
+    width:320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-270px;
+
+  }
+  .titolodetersionegrassadue{
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:6px;
+    margin-top:0;
+  }
+ .testoprovina3 p{
+    font-size:12px;
+    width:320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-270px;
+ }
+ .titolodetersionegrassatre{
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:6px;
+    margin-top:60px;
+  }
+  /* RESPONSIVE DETERSIONESECCA.HTML */
+
+    .arrow-containerl,
+    .arrow-container {
+      position:absolute;
+      left:80%;
+    top:1370px;  
+    font-size:5px;
+    }
+  
+    .freccia {
+      flex-direction: column-reverse; /* Posiziona la freccia sopra il testo */
+      
+    }
+  
+    .arrowl,
+    .arrow {
+      font-size: 50px; /* Riduci la dimensione della freccia */
+      margin-bottom: 10px; /* Riduci il margine inferiore */
+      margin-top: 0; /* Elimina il margine superiore */
+    }
+  
+    .arrowl:hover,
+    .arrow:hover {
+      transform: translateY(-10px); /* Sposta la freccia all'indietro al passaggio del mouse */
+    }
+
+    .imgdetersionesecca1 img,
+    .imgdetersionesecca2 img {
+      margin-left: 10px; /* Posiziona le immagini a sinistra */
+      margin-right: auto; /* Centra le immagini orizzontalmente */
+      width: 20%; /* Riduci la larghezza delle immagini */
+      max-height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+    }
+    .imgdetersionesecca3 img {
+        width:17%;
+        margin-left:17px;
+    }
+   
+    .txtdetersionesecca2 p,
+    .txtdetersionesecca3 p {
+      margin-right: 0; /* Elimina il margine destro */
+      width: 60%; /* Occupa tutta la larghezza disponibile */
+      float: right; /* Elimina l'allineamento a destra */
+      margin-top: -200px; /* Spazio tra il testo e l'immagine */
+      font-size: 12px;
+      margin-right:50px;
+      
+    }
+    .txtdetersionesecca3 p {
+        margin-top: -180px;
+    }
+    .txtdetersionesecca1 p{
+        margin-right: 0; /* Elimina il margine destro */
+        width: 60%; /* Occupa tutta la larghezza disponibile */
+        float: right; /* Elimina l'allineamento a destra */
+        margin-top: -170px; /* Spazio tra il testo e l'immagine */
+        font-size: 12px;
+        margin-right:50px;
+    }
+  
+    .titolo1{
+        font-size: 5px; /* Riduci la dimensione del nome del prodotto */
+        margin-left: -320px; /* Elimina il margine sinistro */
+        text-align: center; /* Centra il nome del prodotto */
+        margin-top: 0px;
+    }
+    .titolo2{
+        font-size: 5px; /* Riduci la dimensione del nome del prodotto */
+        margin-left: -320px; /* Elimina il margine sinistro */
+        text-align: center; /* Centra il nome del prodotto */
+        margin-top: 60px;
+    }
+    .titolo3 {
+      font-size: 5px; /* Riduci la dimensione del nome del prodotto */
+      margin-left: -320px; /* Elimina il margine sinistro */
+      text-align: right; /* Centra il nome del prodotto */
+      margin-top: 25px;
+      width: 400px;
+    }
+
+    /* RESPONSIVE TONICOGRASSA.HTML */
+   .herograssa10{
+    margin-top:20px;
+   }
+    .arrow.left { /* Aggiungi il punto alla classe per selezionare l'elemento corretto */
+      font-size: 50px; /* Riduci la dimensione della freccia */
+      margin: 0; /* Elimina i margini precedenti */
+      margin-bottom: 20px; /* Riduci la distanza tra il footer e la freccia */
+    }
+    .arrow.left:hover {
+      transform: translateX(-10px); /* Sposta la freccia all'indietro al passaggio del mouse */
+    }
+    .provinarosso{ /* SECONDA IMMAGINE */
+        width:12%;
+        height:12%;
+        margin-left: 15px;
+    }
+  .pennablu{ /* PRIMA IMMAGINE */
+    width:15%;
+    height:15%;
+    margin-left: 0px;
+  
+  }
+  .provina31{ /* TERZA IMMAGINE */
+    width:15%;
+    height:15%;
+    margin-left: 15px;
+  }
+  .testoprovina1x p{ /* PARAGRAFO PRIMA IMMAGINE */
+    margin-top: -200px; /* Spazio tra il testo e l'immagine */
+    font-size:12px;
+ width:350px;
+ margin-left: auto;
+ margin-right: auto;
+
+  }
+  .sottotitolotonicograssa{ 
+    width:50%;
+    font-size:6px;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top:-10px;
+  }
+
+.testoprovina25 p{
+    margin-top: -200px; /* Spazio tra il testo e l'immagine */
+    font-size:12px;
+ width:350px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.sottotitoloduetonico{
+    width:50%;
+    font-size:6px;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top:15px;
+}
+.sottotitolotretonico{
+    width:50%;
+    font-size:6px;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top:20px;
+}
+.testoprovina35 p{
+    margin-top: -200px; /* Spazio tra il testo e l'immagine */
+    font-size:12px;
+ width:350px;
+ margin-left: auto;
+ margin-right: auto;
+}
+  
+  /* RESPONSIVE TONICOSECCA.HTML */
+ 
+
+  .imgtonicosecca1 img{
+    width: 20%; /* Riduci la larghezza delle immagini */
+      height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+      margin-left: 45px; /* Posiziona le immagini a sinistra */
+      margin-right: auto; /* Centra le immagini orizzontalmente */
+      margin-top: 20px; /* Aggiusta la distanza superiore */
+      margin-bottom: 50px;
+  
+  }
+  .imgtonicosecca2 img{
+    width: 12%; /* Riduci la larghezza delle immagini */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+    margin-left: 60px; /* Posiziona le immagini a sinistra */
+    margin-right: auto; /* Centra le immagini orizzontalmente */
+    margin-top: 20px; /* Aggiusta la distanza superiore */
+    margin-bottom: 10px;
+  }
+  .imgtonicosecca3 img{
+    width: 14%; /* Riduci la larghezza delle immagini */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+    margin-left: 55px; /* Posiziona le immagini a sinistra */
+    margin-right: auto; /* Centra le immagini orizzontalmente */
+    margin-top: 20px; /* Aggiusta la distanza superiore */
+    margin-bottom:26%;
+  }
+  .txttonicosecca1 p,
+  .txttonicosecca2 p,
+  .txttonicosecca3 p {
+    margin-left: 170px; /* Elimina il margine destro */
+    width: 60%; /* Occupa tutta la larghezza disponibile */
+    float: none; /* Elimina l'allineamento a destra */
+    margin-top: -50px; /* Spazio tra il testo e l'immagine */
+    font-size: 12px;
+  }
+  .txttonicosecca1 p{
+    margin-top:-39%;
+  }
+  .txttonicosecca2 p{
+    margin-top:-35%;
+  }
+  .txttonicosecca3 p{
+    margin-top:-45%;
+  }
+  .titolot1,
+  .titolot2,
+  .titolot3 {
+    font-size: 5px; /* Riduci la dimensione del nome del prodotto */
+    margin-left: -280px; /* Elimina il margine sinistro */
+    text-align: center; /* Centra il nome del prodotto */
+    margin-top: 0; /* Elimina il margine superiore */
+  }
+  .titolot1{
+    margin-top:-150px;
+    margin-left: 230px;
+  }
+  .titolot2{
+    margin-top:-170px;
+    margin-left: 230px;
+    width: max-content;
+   
+  }
+  .titolot3{
+    margin-top:-110px;
+    margin-left: 230px;
+  }
+/* RESPONSIVE SIEROGRASSA.HTML */
+.herograssa10{
+    margin-top:20px;
+   }
+    .arrow.left { /* Aggiungi il punto alla classe per selezionare l'elemento corretto */
+      font-size: 50px; /* Riduci la dimensione della freccia */
+      margin: 0; /* Elimina i margini precedenti */
+      margin-bottom: 20px; /* Riduci la distanza tra il footer e la freccia */
+    }
+    .arrow.left:hover {
+      transform: translateX(-10px); /* Sposta la freccia all'indietro al passaggio del mouse */
+    }
+    .provina211{ /* SECONDA IMMAGINE */
+        width:12%;
+        height:12%;
+        margin-left: 15px;
+        margin-top: 0;
+   
+    }
+  .pennarossa{ /* PRIMA IMMAGINE */
+    width:15%;
+    height:15%;
+    margin-left: 8px;
+    
+  
+  }
+  .provina311{ /* TERZA IMMAGINE */
+    width:15%;
+    height:15%;
+    margin-left: 15px;
+    margin-top: 80px;
+  }
+  .testoprovina1y p{ /* PARAGRAFO PRIMA IMMAGINE */
+    margin-top: -150px; /* Spazio tra il testo e l'immagine */
+    font-size:12px;
+ width:350px;
+ margin-left: auto;
+ margin-right: auto;
+
+  }
+  .sottotitolosierograssa{  /* SOTTOTITOLO PRIMA IMMAGINE */
+    width:50%;
+    font-size:6px;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top:-25px;
+  }
+
+.testoprovina2x p{ /* PARAGRAFO SECONDA IMMAGINE */
+    margin-top: -180px; /* Spazio tra il testo e l'immagine */
+    font-size:12px;
+ width:350px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.cannabis{ /* SOTTOTITOLO SECONDA IMMAGINE */
+    width:50%;
+    font-size:6px;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top:15px;
+}
+.lierac{ /* SOTTOTITOLO TERZA IMMAGINE */
+    width:50%;
+    font-size:6px;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top:-230px;
+}
+.testoprovina3x p{ /* PARAGRAFO TERZA IMMAGINE */
+    margin-top: -200px; /* Spazio tra il testo e l'immagine */
+    font-size:12px;
+ width:350px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+/* RESPONSIVE CREMAGRASSA.HTML */
+
+  .imgcremagrassa2 img,
+  .imgcremagrassa3 img {
+    margin-left: 0; /* Posiziona le immagini a sinistra */
+    margin-right: auto; /* Centra le immagini orizzontalmente */
+    max-width: 35%; /* Riduci la larghezza delle immagini */
+    max-height: 250px; /* Imposta l'altezza automaticamente in base alla larghezza */
+    margin-top:20px; /* Aggiusta la distanza superiore */
+  }
+  .imgcremagrassa1 img{
+    margin-top:-30px;
+    margin-right:auto;
+    margin-left:15px;
+    position: relative;
+    top:70px;
+    width:25%;
+  }
+  .imgcremagrassa2 img{
+    max-width:50%;
+    margin-left:0px;
+    position: relative;
+    top:40px;
+    width:30%;
+  }
+  .imgcremagrassa3 img{
+    max-width:50%;
+    margin-left:0px;
+    position: relative;
+    top:-30px;
+    width:30%;
+  }
+  .txtcremagrassa1 p,
+  .txtcremagrassa2 p,
+  .txtcremagrassa3 p {
+    margin-left: 170px; /* Elimina il margine destro */
+    width: 60%; /* Occupa tutta la larghezza disponibile */
+    float: none; /* Elimina l'allineamento a destra */
+    margin-top:-30px; /* Spazio tra il testo e l'immagine */
+    font-size: 12px;
+    
+  }
+  .txtcremagrassa1 p{
+   margin-top:-70px;
+  }
+  .txtcremagrassa2 p{
+    margin-top: -80px;
+    
+   
+  }
+  .txtcremagrassa3 p{
+    margin-left: 170px; /* Elimina il margine destro */
+    width: 60%; /* Occupa tutta la larghezza disponibile */
+    float: none; /* Elimina l'allineamento a destra */
+    margin-top:-140px; /* Spazio tra il testo e l'immagine */
+    font-size: 12px;
+    margin-bottom:25px;
+   
+  }
+  .titolocgrassa1,
+  .titolocgrassa2,
+  .titolocgrassa3 {
+    font-size: 6px; /* Riduci la dimensione del nome del prodotto */
+    margin-left: -350px; /* Elimina il margine sinistro */
+    text-align: center; /* Centra il nome del prodotto */
+    margin-top: -10px; /* Elimina il margine superiore */
+  }
+  .titolocgrassa1{
+    margin-top:-210px;
+    width:300px;
+    margin-right: 30px;
+    margin-left: auto;
+  }
+.titolocgrassa2 h1{
+    margin-top:5px;
+}
+.titolocgrassa2{
+    margin-top:-210px;
+    width:300px;
+    margin-right: 30px;
+    margin-left: auto;
+  }
+  .titolocgrassa3{
+    margin-top:-180px;
+    width:300px;
+    margin-right: 30px;
+    margin-left: auto;
+  }
+
+
+/* CSS SIEROSECCA.HTML */
+.imgsierosecca1 img,
+.imgsierosecca2 img,
+.imgsierosecca3 img {
+    margin-left: 0; /* Posiziona le immagini a sinistra */
+    margin-right: auto; /* Centra le immagini orizzontalmente */
+    max-width: 15%; /* Riduci la larghezza delle immagini */
+    height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+    margin-top:20px; /* Aggiusta la distanza superiore */
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+
+
+
+.txtsierosecca1 p,
+.txtsierosecca2 p,
+.txtsierosecca3 p {
+  margin-right: 0; /* Elimina il margine destro */
+  width: 60%; /* Occupa l'80% della larghezza disponibile */
+  float: none; /* Elimina l'allineamento a destra */
+  margin-top: 10px; /* Spazio tra il testo e l'immagine */
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 12px;
+}
+.txtsierosecca1 p{
+    margin-left:170px;
+  margin-top:-120px;
+}
+.txtsierosecca2 p{
+    margin-left:170px;
+    margin-top:-200px;
+    position: absolute;
+}
+.txtsierosecca3 p{
+    margin-left:170px;
+    margin-top:-170px;
+    position: absolute;
+    
+}
+
+
+.titolos1,
+.titolos2,
+.titolos3 {
+  font-size: 10px; /* Riduci la dimensione del nome del prodotto */
+  margin-left: 0; /* Elimina il margine sinistro */
+  text-align: center; /* Centra il nome del prodotto */
+}
+.titolos1 h1{
+  font-size:10px;
+  width:max-content;
+  margin-top: -16px;
+}
+.titolos2 h1{
+  font-size:10px;
+  width:max-content;
+  margin-top: -20px;
+}
+.titolos3 h1{
+  float: none;
+  font-size:10px;
+  width:max-content;
+  margin-top: -100px;
+}
+/* RESPONSIVE ABOUT US */
+.nostro{
+    font-size: 12px;
+    margin-top: 90px;
+}
+
+.chisiamo{
+    display: grid;
+}
+.chisiamo p{
+    font-size: 14px;
+    width: 70%;
+}
+.chisiamo img{
+    margin-left: 20%;
+    margin-top: 20px;
+    max-width: 300px;
+    max-height:  500px;
+}
+.tipo1{
+    display: grid;
+}
+.tipo1 img{
+    max-width: 400px;
+    max-height: 300px;
+    margin-left: 0%;
+    margin-top: 5%;
+
+}
+.tipo2 img{
+    max-width: 400px;
+    max-height: 300px;
+    margin-left: 0%;
+    margin-top: 5%;
+}
+.tipo2{
+    display: grid;
+}
+.team p{
+    font-size: 14px;
+    max-width: 80%;
+    margin-left: 6%;
+    margin-top: -10px;
+
+}
+.nome1{
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: -40px;
+    width:60%;
+}
+.nome{
+    margin-top: 10px;
+    margin-left: 70px;
+    width:60%;
+}
+
+/* CSS CREMA SECCA */
+.imgcremasecca1 img,
+  .imgcremasecca2 img,
+  .imgcremasecca3 img {
+    margin-left: 0; /* Posiziona l'immagine a sinistra */
+    margin-right: auto; /* Centra l'immagine orizzontalmente */
+    max-width: 100%; /* Riduci la larghezza dell'immagine */
+    max-height: auto; /* Imposta l'altezza automaticamente in base alla larghezza */
+    margin-top: 20px; /* Aggiusta la distanza superiore */
+  }
+
+  .imgcremasecca1 img{
+    max-width: 20%;
+    margin-left:55px;
+    position:relative;
+    top:10px;
+    margin-bottom:7%;
+  }
+  .imgcremasecca2 img{
+    max-width: 35%;
+    margin-left:22px;
+    position:relative;
+    top: -40px;
+    margin-bottom: 50px;
+  }
+  .imgcremasecca3 img{
+    max-width: 40%;
+    margin-left:10px;
+    position:relative;
+    top:-100px;
+    margin-bottom:7%;
+  }
+
+
+  .txtcremasecca1 p{
+    margin-left:190px;
+    margin-top:-150px;
+    font-family: 'Libre Caslon Text', serif;
+    width: 60%; /* Occupa l'80% della larghezza disponibile */
+    font-size: 12px;
+    float: none;
+  }
+  .txtcremasecca2 p{
+    margin-left:190px;
+    margin-top:-200px;
+    font-family: 'Libre Caslon Text', serif;
+    width: 60%; /* Occupa l'80% della larghezza disponibile */
+    font-size: 12px;
+    float: none;
+  }
+  .txtcremasecca3 p{
+    margin-left:190px;
+    margin-top:-220px;
+    font-family: 'Libre Caslon Text', serif;
+    width: 60%; /* Occupa l'80% della larghezza disponibile */
+    font-size: 12px;
+    float: none;
+  }
+
+  .titoloc3 h1 {
+    font-size: 10px; /* Riduci la dimensione del nome del prodotto */
+    margin-left: 30px; /* Elimina il margine sinistro */
+    margin-right: -17%;
+    text-align: right; /* Centra il nome del prodotto */
+    margin-top: 20px; /* Spazio tra il nome del prodotto e il testo */
+    font-family: 'Libre Caslon Text', serif;
+    float: none;
+  }
+  .titoloc2 h1{
+  font-size:10px;
+  margin-top: 20px;
+  font-size: 10px;
+ 
+  }
+  .titoloc1 h1{
+    font-size:10px;
+    margin-top: -20px;
+    margin-left: 0; /* Elimina il margine sinistro */
+    text-align: center; 
+ 
+  
+  }
+ 
+  
+  .arrow-containerape{
+    margin-top:10px;
+    margin-bottom:-10px;
+  }
+
+.arrow-containerlcane1{
+    margin-top:10px;
+}
+.arrow-containerape1{
+    margin-right:10px;
+    margin-bottom:-82px;
+}
+.arrow-containerlcane2 {
+    margin-left:10px;
+    margin-top:-75px;
+}
+.arrow-containerape2{
+    margin-top:-5px;
+}
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                } /* PARENTESI CHE CHIUDE IL MEDIA */
+            
